@@ -42,7 +42,7 @@ public class Usuario {
 	private Integer edad;
 	
 	@NotBlank
-	@Column(name = "contraseña")
+	@Column(name = "contrasena")
 	private String password;
 	
 	public Integer calcularEdad() {
