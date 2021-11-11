@@ -55,6 +55,7 @@ public class Usuario {
 		return periodo.getYears();
 		//System.out.printf("Tu edad es: %s años, %s meses y %s días",
 		                    //periodo.getYears(), periodo.getMonths(), periodo.getDays());
+		//
 	}
 	
 	@PrePersist
