@@ -47,6 +47,12 @@ Aplicación rest en java sping boot parte del reto de PeruApps
 
 7. Metodo POST para iniciar sesión <br>
     `http://localhost:8071/api/auth/login`<br>
+    Body > raw > JSON <br>
+  {
+    "correo": "esanchez@correo.com",
+    "password": "123456"
+  }
+    
     Retornará un token
 8. Metodo GET para listar los usuarios<br>
     `http://localhost:8071/api/usuarios/listar`<br>
@@ -55,5 +61,13 @@ Aplicación rest en java sping boot parte del reto de PeruApps
     `http://localhost:8071/api/usuarios/eliminar/3`
     Agregar en el Headers => Authorization y el token
 10. Metodo PUT para actualizar<br>
-    `http://localhost:8071/api/usuarios/actualizar`
-    Agregar en el Headers => Authorization y el token
+    `http://localhost:8071/api/usuarios/actualizar`<br>
+    Agregar en el Headers => Authorization y el token<br>
+    Body > raw > JSON <br>
+    {
+    "id": 2,
+    "usuario": "jcuadros_editww",
+    "correo": "jcuadros_edit@correo.com",
+    "password": "123456",
+    "fechaNacimiento": "1988-10-09"
+}
